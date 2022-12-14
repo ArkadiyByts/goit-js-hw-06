@@ -29,3 +29,5 @@ const lastImagesSize = galleryList.lastChild.firstChild;
 firstImagesSize.style.width = '300px';
 secondImagesSize.style.width = '300px';
 lastImagesSize.style.width = '300px';
+
+galleryList.classList.add('flexy')
