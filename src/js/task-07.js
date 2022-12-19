@@ -1,21 +1,18 @@
-const range = document.querySelector('#font-size-control');
-console.log(range.value);
-let rangeValue = range.getAttribute('value');
-console.log(rangeValue);
-let span = document.querySelector('#text');
-console.log(span);
-span.st
+const range = document.getElementById('font-size-control');
+console.log(range);
 
-//range.addEventListener("click", () => {
-    if (range.value > rangeValue) {
-      rangeValue === range.value;  
-    }
+let span = document.getElementById('text');
+console.log(span);
+
+
+
+
+
+
+
+range.addEventListener("input", () => {
+  span.style.fontSize = `${range.value}px`
+  });
     
   
         
-    
-//});
-
-//$("#sli#font-size-controlder").on("input",function () {
-    //        $('#text').css("font-size", $(this).val() + "px");
-  //  });
