@@ -8,7 +8,9 @@ logForm.addEventListener('submit', (event) => {
     if (email.value === "" || password.value === "") {
         alert('"Email" or "Password" field is empty');
     }
+    if (email.value !== "" && password.value !== "") { 
     console.log({ email: email.value, password: password.value });
+    }
     event.currentTarget.reset();
 });
 
