@@ -1,15 +1,16 @@
-let input = document.querySelector('#name-input');
-let span = document.querySelector('#name-output');
+//let input = document.querySelector('#name-input');
+const inputEl = document.querySelector('#name-input');
+const spanEl = document.querySelector('#name-output');
 
-console.log(input);
-console.log(span);
+//console.log(inputEl.placeholder);
+//console.log(spanEl.textContent);
 
-input.addEventListener('input', (event) => {
-    span.textContent = 'Anonymous';
+inputEl.addEventListener('input', (event) => {
+    spanEl.textContent = 'Anonymous';
    
     if (event.currentTarget.value !== "") {
-        span.textContent = event.currentTarget.value; 
-        console.log(span.textContent);
+        spanEl.textContent = event.currentTarget.value.charAt().toUpperCase() + event.currentTarget.value.slice(1); 
+        //previous code line changes content with auto capitalize first letter from input
     };
     
 });
@@ -17,4 +18,4 @@ input.addEventListener('input', (event) => {
 
 
 
-console.log(span.textContent);
+//console.log(spanEl.textContent);

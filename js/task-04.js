@@ -9,14 +9,16 @@ const firstBtn = document.body.firstChild.nextSibling.nextSibling.nextSibling.fi
 const secondBtn = document.body.firstChild.nextSibling.nextSibling.nextSibling.lastChild.previousSibling;
 console.log(firstBtn);
 console.log(secondBtn);
+firstBtn.textContent = '-2';
+secondBtn.textContent = '+2';
 
 firstBtn.addEventListener("click", () => {
-    counterValue -= 1;
+    counterValue -= 2;
     console.log(counterValue);
     span.textContent = `${counterValue}`;
 });
 secondBtn.addEventListener("click", () => {
-    counterValue += 1;
+    counterValue += 2;
     console.log(counterValue);
     span.innerHTML = `<span id="value">${counterValue}</span>`;
 });
