@@ -12,22 +12,22 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-const imgFrame = images.map((image) => `<li><img src='${image.url}' alt='${image.alt}'></li>`).join("");
+const imgFrame = images.map((image) => `<li><img src='${image.url}' alt='${image.alt}' width = 300px></li>`).join("");
 
-const galleryList = document.querySelector("ul");
+const galleryList = document.querySelector(".gallery");
 
 galleryList.insertAdjacentHTML('afterbegin', imgFrame);
 
-const listItems = galleryList.children;
 galleryList.style.listStyleType = 'none';
 document.body.style.backgroundColor = "lightblue";
 
-const firstImagesSize = document.querySelector("img");
-const secondImagesSize = galleryList.firstChild.nextSibling.firstChild;
-const lastImagesSize = galleryList.lastChild.firstChild;
+// const firstImagesSize = document.querySelector("img");
+// const secondImagesSize = galleryList.firstChild.nextSibling.firstChild;
+// const lastImagesSize = galleryList.lastChild.firstChild;
 
-firstImagesSize.style.width = '300px';
-secondImagesSize.style.width = '300px';
-lastImagesSize.style.width = '300px';
+// firstImagesSize.style.width = '300px';
+// secondImagesSize.style.width = '300px';
+// lastImagesSize.style.width = '300px';
 
 galleryList.classList.add('flexy')
+console.log();
